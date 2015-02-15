@@ -1,0 +1,9 @@
+{
+  "name": "alice-landscape",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-uglify": "*"
+  }
+}
