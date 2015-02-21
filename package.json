@@ -4,6 +4,10 @@
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-compress": "*",
-    "grunt-contrib-uglify": "*"
+    "grunt-contrib-uglify": "*",
+    "grunt-html2js": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-less" : "*"
   }
 }
