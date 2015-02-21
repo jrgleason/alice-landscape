@@ -16,3 +16,4 @@ alice-landscape.zip
 build
 .project
 .settings
+deploy-alice.sh
