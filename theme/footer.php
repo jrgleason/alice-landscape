@@ -23,5 +23,7 @@
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/angular.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/theme-templates.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/theme.js"></script>
 </body>
 </html>

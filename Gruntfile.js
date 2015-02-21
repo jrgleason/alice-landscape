@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 			}
 		},
 		concat : {
-			core : {
+			default : {
 				src : [ 'src/main/angular/**/app.js',
 						'src/main/angular/**/*.js' ],
 				dest : 'build/alice-angular-core.js',
@@ -29,7 +29,14 @@ module.exports = function(grunt) {
 				    "theme/css/theme.css" : "src/main/less/main.less"
 			    }
 			}
-			
+		}, 
+		copy: {
+	          default: {
+	              files: [
+	                  {src: ['build/alice-angular-core.js'], dest: 'theme/js/theme.js'},
+	                  {src: ['build/alice-landscape-templates.js'], dest: 'theme/js/theme-templates.js'}
+	              ],
+	          }
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-compress');
