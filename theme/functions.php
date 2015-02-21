@@ -171,8 +171,8 @@ add_action( 'wp_enqueue_scripts', 'landscape_scripts' );
 
 /**
  * Adds custom background support
+ * This is essentially allowing a color to be picked from the menu
  */
-
 $args = array(
 	'default-color' => 'ffffff',
 );

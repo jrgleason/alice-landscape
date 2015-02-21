@@ -6,7 +6,7 @@ module.exports = function (grunt) {
           archive: 'alice-landscape.zip'
         },
         files: [
-          {src: ['./**']}
+          {src: ['./theme/**']}
         ] 
       }
     }

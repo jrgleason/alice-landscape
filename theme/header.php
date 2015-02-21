@@ -14,13 +14,16 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
 <?php wp_head(); ?>
+<link href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php bloginfo('template_directory'); ?>/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="<?php bloginfo('template_directory'); ?>/css/theme-xs.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
+	
 	<header id="masthead" class="site-header" role="banner">
 		<nav role="navigation" class="site-navigation main-navigation">
 			<h1 class="assistive-text"><?php _e( 'Menu', 'landscape' ); ?></h1>
