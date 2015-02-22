@@ -79,13 +79,33 @@ body{
     margin-top: 20px;
     min-width:100%;
     .x-browser-display-flex();
+    .x-browser-flex-justify-content(center);
     div{
-      max-width:33%;
-      min-width:33%;
+      .x-browser-flex-col();
+      .x-browser-flex-justify-content(flex-start);
+      .x-browser-flex-grow(1);
+      h1{
+          text-align: center;
+          margin-top: 0;
+      }
+      ul{
+          list-style-type: none;
+          margin:0;
+      }
     }
+}
+.sidebar{
+    text-align:center;
 }
 @media only screen and (max-width: 768px) {
   .navbar{
     .x-browser-flex-justify-content(flex-end);
   }
+  .widget-area{
+    .x-browser-wrap();
+    div{
+      min-width:100%;
+      margin: 10px;
+    }
+}
 }

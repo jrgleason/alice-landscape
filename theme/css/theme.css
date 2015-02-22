@@ -98,14 +98,41 @@ body {
   min-width: 100%;
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .widget-area div {
-  max-width: 33%;
-  min-width: 33%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+.widget-area div h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.widget-area div ul {
+  list-style-type: none;
+  margin: 0;
+}
+.sidebar {
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .navbar {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
+  }
+  .widget-area {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .widget-area div {
+    min-width: 100%;
+    margin: 10px;
   }
 }

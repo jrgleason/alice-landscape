@@ -891,19 +891,6 @@ a.comment-reply-link:hover {
 
 #secondary{
 	width:100%;
-	clear:both;
-}
-#left-sidebar{
-	float:left;
-	width:30%;
-}
-#middle-sidebar{
-	float:left;
-	width:30%;
-}
-#right-sidebar{
-	float:right;
-	width:30%;
 }
 #homepage-left-sidebar{
 	float:left;
@@ -1152,14 +1139,6 @@ a.comment-reply-link:hover {
 
 /* =Responsive Structure
 ----------------------------------------------- */
-
-
-	
-#middle-sidebar{
-	float:left;
-	width:25%;
-}
-
 #homepage-middle-sidebar{
 	float:left;
 	width:25%;
@@ -1168,18 +1147,6 @@ a.comment-reply-link:hover {
 
 }
 @media only screen and (max-width: 768px) {
-	#left-sidebar{
-		float:none;
-		width:100%;
-	}
-	#middle-sidebar{
-		float:none;
-		width:100%;
-	}
-	#right-sidebar{
-		float:none;
-		width:100%;
-	}
 	#homepage-left-sidebar{
 		float:none;
 		width:100%;
