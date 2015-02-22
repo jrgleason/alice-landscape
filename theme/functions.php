@@ -86,55 +86,6 @@ add_action( 'after_setup_theme', 'landscape_setup' );
  *
  */
 function landscape_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Left Sidebar', 'landscape' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Middle Sidebar', 'landscape' ),
-		'id' => 'sidebar-2',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Right Sidebar', 'landscape' ),
-		'id' => 'sidebar-3',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-	
-	register_sidebar( array(
-		'name' => __( 'Homepage Left Sidebar', 'landscape' ),
-		'id' => 'homepage-left-sidebar',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Homepage Middle Sidebar', 'landscape' ),
-		'id' => 'homepage-middle-sidebar',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
-	register_sidebar( array(
-		'name' => __( 'Homepage Right Sidebar', 'landscape' ),
-		'id' => 'homepage-right-sidebar',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
 }
 add_action( 'widgets_init', 'landscape_widgets_init' );
 

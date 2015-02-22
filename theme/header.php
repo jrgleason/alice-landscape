@@ -22,18 +22,30 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<al-nav-bar></al-nav-bar>
-	<header id="masthead" class="site-header" role="banner">
-		<nav role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', 'landscape' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#conlandscapet" title="<?php esc_attr_e( 'Skip to conlandscapet', 'landscape' ); ?>"><?php _e( 'Skip to conlandscapet', 'landscape' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
-		<div id="logo">
+	<nav class="navbar main-navigation">
+         <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle collapsed">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+              </button>
+              <!--  <div class="navbar-brand">Brand</div> -->
+         </div>
+         <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>    
+         </div>
+    </nav>
+	<div class="main-area">
+	<div id="masthead" class="site-header" role="banner">
+		<div id="logo" class="logo">
+		    <div class="logo-child" >
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			</div>
+			<div class="logo-child" >
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			</div>
 		</div>
-	</header><!-- #masthead .site-header -->
+	</div><!-- #masthead .site-header -->
 
 <div id="main" class="site-main">

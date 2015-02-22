@@ -1,3 +1,21 @@
 .x-browser-display-flex(){
+  display: -webkit-flex;
   display:flex;
+}
+.x-browser-flex-col(){
+  .x-browser-display-flex();
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.x-browser-flex-align-items(@type){
+    -webkit-align-items: @type;
+    align-items: @type;
+}
+.x-browser-flex-justify-content(@type){
+    -webkit-justify-content: @type;
+    justify-content: @type;
+}
+.x-browser-align-self(@type){
+    --webkit-align-self: @type;
+    align-self: @type;
 }
