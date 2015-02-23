@@ -33,7 +33,14 @@
               <!--  <div class="navbar-brand">Brand</div> -->
          </div>
          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>    
+             <div class="menus">
+                 <div class="nav-menu">
+                     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>   
+                 </div>
+                 <div class="shop-menu">
+                     <?php wp_nav_menu( array( 'menu' => 'CommerceMenu' ) ); ?> 
+                 </div>
+             </div> 
          </div>
     </nav>
 	<div class="main-area">

@@ -25,8 +25,18 @@ body {
   width: 100%;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+}
+.navbar .navbar-collapse {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+.navbar .navbar-collapse .menus {
+  display: -webkit-flex;
+  display: flex;
+}
+.navbar .navbar-collapse .menus .nav-menu {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
 }
 .navbar .navbar-collapse .menu ul {
   display: -webkit-flex;
@@ -108,8 +118,8 @@ body {
   flex-direction: column;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
-  flex-grow: 1;
-  -webkit-flex-grow: 1;
+  min-width: 33%;
+  max-width: 33%;
 }
 .widget-area div h1 {
   text-align: center;

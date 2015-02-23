@@ -21,8 +21,14 @@ body{
   border: none;
   width:100%;
   .x-browser-display-flex();
-  .x-browser-flex-justify-content(center);
   .navbar-collapse{
+    .x-browser-flex-grow(1);
+    .menus{
+       .x-browser-display-flex();
+       .nav-menu{
+           .x-browser-flex-grow(1);
+       }
+    }
     .menu{
       ul{
         .x-browser-display-flex();
@@ -83,7 +89,8 @@ body{
     div{
       .x-browser-flex-col();
       .x-browser-flex-justify-content(flex-start);
-      .x-browser-flex-grow(1);
+      min-width:33%;
+      max-width:33%;
       h1{
           text-align: center;
           margin-top: 0;
@@ -94,6 +101,7 @@ body{
       }
     }
 }
+
 .sidebar{
     text-align:center;
 }
@@ -107,5 +115,6 @@ body{
       min-width:100%;
       margin: 10px;
     }
-}
+  }
+  
 }

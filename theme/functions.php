@@ -134,3 +134,21 @@ add_theme_support( 'custom-background', $args );
  * Implement the Custom Header feature
  */
 require( get_template_directory() . '/inc/custom-header.php' );
+
+
+/**
+ * Adding WooCommerce Support
+ */
+ add_theme_support( 'woocommerce' );
+ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_output_content_wrapper', 10);
+ remove_action( 'woocommerce_after_shop_loop', 'woocommerce_output_content_wrapper_end', 10);
+ add_action('woocommerce_before_shop_loop', 'my_theme_wrapper_start', 10);
+ add_action('woocommerce_after_shop_loop', 'my_theme_wrapper_end', 10);
+ 
+ function my_theme_wrapper_start() {
+ 	echo '<div id="shop-main" class="shop">';
+ }
+ 
+ function my_theme_wrapper_end() {
+ 	echo '</div>';
+ }
